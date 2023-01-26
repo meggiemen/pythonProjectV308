@@ -1,0 +1,27 @@
+\section{Fehlerrechnung}
+Für im Protokoll aufkommende Fehlerrechnungen werden folgende Formeln verwendet:
+
+Die Formel für die Berechnung eines Mittelwertes:
+\begin{equation}
+    \bar{x}=\frac{1}{N}\sum^N_{i=1}x_i
+    \label{eq:Mittelwert}
+\end{equation}
+
+Die Formel für die Berechnung des Fehlers eines Mittelwertes:
+\begin{equation}
+    \increment\bar{x} = \sqrt{\frac{1}{1-N}\sum^N_{i=1}\left(x_i-\bar{x}\right)^2}  
+    \label{eq:MittelwertErr}
+\end{equation}
+
+Die Formel für die Berechnung des Fehlers einer allgemeinen Größe:
+\begin{equation}
+    \increment f=\sqrt{\sum^N_{i=1}\left(\frac{\partial f}{\partial x_i}\right)^2\cdot\left(\increment x_i\right)^2}
+    \label{eq:Err}
+\end{equation}
+
+Die Formel für die Berechnung der relativen Abweichung einer gemessenen Größe:
+\begin{equation}
+    \increment x_\text{rel}=\frac{\lvert x_\text{mess}-x_\text{theoretisch}\rvert}{x_\text{theoretisch}}\cdot 100\%
+    \label{eq:RelErr}
+\end{equation}
+\label{sec:Fehlerrechnung}
