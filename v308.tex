@@ -1,0 +1,33 @@
+\input{header.tex}
+
+\subject{v308}
+\title{Spulen und Magnetfelder}
+\date{
+  Durchführung: 15.12.2022
+  \hspace{3em}
+  Abgabe: ???
+}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+
+\input{content/theorie308.tex}
+\input{content/auswertung.tex}
+\input{content/diskussion.tex}
+
+\newpage
+\printbibliography{}
+\nocite{matplotlib}
+\nocite{numpy}
+\nocite{scipy}
+\nocite{uncertainties}
+\nocite{reback2020pandas}
+
+\newpage
+\includepdf[pages=-]{tables/messdaten.pdf}
+
+\end{document}
