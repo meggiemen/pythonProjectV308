@@ -1,0 +1,435 @@
+\documentclass[11pt,a4paper,titlepage]{scrartcl}
+\usepackage[utf8]{inputenc}	
+\usepackage[T1]{fontenc}		
+\usepackage[ngerman]{babel}
+\usepackage{german}
+\selectlanguage{german}
+\usepackage	[ngerman]{varioref}		
+\usepackage[autostyle=true,german=quotes]{csquotes}
+\usepackage{cases}
+\usepackage{lmodern}			 
+\usepackage[intlimits]{amsmath}
+\usepackage{graphicx}			
+\usepackage{url}	
+\usepackage{hyperref}
+\usepackage{floatflt}
+\usepackage{float}
+\usepackage{varioref}
+\usepackage{cleveref}
+\usepackage{tabularx}
+\usepackage{caption, booktabs}
+\usepackage{booktabs}	
+\usepackage{eucal}
+\usepackage[verbose]{placeins}
+\usepackage{longtable}
+\usepackage{fourier} 
+\usepackage{array}
+\usepackage{makecell}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usetikzlibrary{circuits.ee.IEC}
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}%\SI{wert}{Einheit Abkürzung}
+\usepackage{subfig}
+\sisetup{locale = DE, per-mode = symbol, separate-uncertainty} % Zur besseren Darstellung der Einheiten
+\setlength{\arrayrulewidth}{0.5mm}
+
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+	{\LARGE Bericht für das medizinphysikalische Praktikum an dem Klinikum Dortmund\par}
+	\vspace{1.0cm}
+	{\huge   \par}
+	\vspace{2.5cm}
+	{\LARGE Technische Universität Dortmund \par}
+	\vspace{0.5cm}
+	{\large Anna Megan Mendel (E-Mail:  annamegan.mendel@tu-dortmund.de) \par}
+	{\large Eren Canpolat (E-Mail: eren.canpolat1996@gmail.com) \par}
+    \vspace{2cm}
+	\begin{tabular}{|c|c|c|}
+    \hline
+    Datum & Tag & Abteilung \\ \hline
+    04.09.2023 & Montag & Anästhesie \\ \hline
+    05.09.2023 & Dienstag & Anästhesie, Intensivstation Nord \\ \hline
+    06.09.2023 & Mittwoch & Kardiologie \\ \hline
+    07.09.2023 & Donnerstag & Augenheilkunde \\ \hline
+    08.09.2023 & Freitag & Urologie \\ \hline
+    11.09.2023 & Montag & Strahlentherapie \\ \hline
+    12.09.2023 & Dienstag & HNO- Klinik \\ \hline
+    13.09.2023 & Mittwoch & Orthopädie \\ \hline
+    14.09.2023 & Donnerstag & Radiologie \\ \hline
+    15.09.2023 & Freitag & Chirurgie \\ \hline
+\end{tabular}
+	\vfill
+	durchgeführt vom 04.09.2023 bis zum 15.09.2023\par
+	betreut von Dr. Anne Peager (E Mail: anne.paeger@tu-dortmund.de)\par
+	
+\end{titlepage}	
+	
+\tableofcontents
+
+\newpage
+
+
+
+\newpage
+
+\section{Kurzbeschreibungen}
+
+
+\subsection{Anästhesie}
+
+Die Anästhesie beschäftigt sich in einem Krankenhaus hauptsächlich mit der Erhaltung der grundlegensten Körperfunktionen. Das bedeuted in einem Operationskontext die Betreuung der Narkose und die ständige Überawchung des Patienten. Hauptsächlich wird die Beatmung, das Herz und das Blut der Patienten beobachtet. \medskip
+
+Die Patienten werden bei kurzen Eingriffen mit einer Kehlkopfmaske (Larynxmaske) beatmet. Diese besteht aus einem aufblasbaren \enquote{Cuff}, der im Hals etwa auf Kehlkopfhöhe platziert wird und sich luftdicht ausdehnt. An der gegenüberliegenden Seite lässt sich ein Beatmungsmodul anschließen, das die Lunge dann mit frischer Luft versorgt. Die expiratorische Luft wird nach ihrem Sauerstoff- und CO$_{2}$ gehalt gemessen, dann wird das CO$_{2}$ rausgefiltert und die Luft bis zu einer Zielkonzentration mit Sauerstoff angereichert. Bei der Luftinspiration wird erneut die CO$_{2}$Konzentration der Luft gemessen, um festzustellen, ob der Filter noch funktioniert. \medskip
+
+Bei längeren Operationen wird eine Endotracheale Intubation vorgenommen. Hierbei wird eine Röhre bis in die Luftröhre (Trachea) geschoben. Die Beatmung erfolgt wie bei der Larynxmaske durch ein Beatmungsgerät. \medskip
+
+Das Beatmungsgerät reguliert die Atemfrequenz, das Atemvolumen, den minimaler und maximaler Druck ebenso, wie die Sauerstoffkonzentration der inspiratorischen Luft und das Minutenvolumen der Luft. Bei bedarf kann mit einer Art \enquote{Luftbalon} auch per Hand beatmet werden. \medskip
+
+Das Herz wird mithilfe von einem 12 Kanal Elektrokardiogramm (EKG) überwacht. Dazu kommen Blutdruckmessungen mit einem Arterienkatheter . \medskip
+
+Das Blut wird auf die Sauerstoffsättigung durch Pulsoxymetrie am Finger bestimmt. Am Anfang jeder Operation und bei bedarf gibt es Blutgasanalysen, um die Zusammensetzung des Blutes festzustellen. Auch gibt es bei Bedarf eine Messung der Blutgerinnung mit einem Koagulometer, diese misst die \enquote{International Normierte Relativzeit} (INS).\medskip
+
+Außerdem wird die Körpertemperatur des Patienten gemeessen und der Patient wird in der Regel auch gewärmt. \medskip
+
+Zusätzlich zu dem Monitoring ist die Anästesie auch mit der Medikation der Patienten beauftragt. Die drei \enquote{Säulen} der Medikation sind ein Narkosemittel, um einen Tiefschlaf auszulösen, ein Relaxionsmittel, um die Muskelaktivität auszuschalten und ein Schmerzmittel, um die Narkose für die Patienten erträglich zu gestalten.\medskip
+
+Für die Medikation ist ausschlaggebend, dass das Medikament möglichst schnell wieder abgebaut werden kann, damit das Medikament nur kurzzeitig wirkt und somit verträglicher für die Patienten ist. \medskip
+
+Die Anästesie dokumentiert auch den Operationsverlauf. Alle fünf Minuten wird in der aktuelle Blutdruck festgehalten, sodass ein Diagramm erstellt wird, in dem die zeitliche Veränderung des Blutdrucks während der Operation abgebildet ist. 
+
+
+
+
+\subsection{Kardiologie}
+
+Die Kardiologie beschäftigt sich mit der Gesundheit des Herzens. Behandelt wurden in unserem Fall zwei Patienten. Bei dem ersten Patienten sollte festgestellt werden, ob er aufgrund seiner Herzrhythmusstörung einenen Kardioverter-Defibrillator implantiert bekommen soll. Dieses Implantat misst die Herzfunktion und ist in der Lage bei bedarf elektromagnetische Impulse an das Herz zu übertragen, damit das Herz seine normale Funktion erfüllen kann. \medskip
+
+Zur Untersuchung wurde der sedierte Patient mit einer Testreihe von elektrischen Impulsen konfrontiert und mithilfe eines 12 Kanal EKGs beobachtet. Die Impulse sollen durch ihre unregelmäßige Form eine Arrhythmie in einem kontrollierten Rahmen auslösen. Wenn eine solche Arrhythmie nicht ausgelöst wird, wird davon ausgegangen, dass der Patient keinen Kardioverter-Defibrillator benötigt. \medskip
+
+Der zweite Patient litt auch unter einer Arrhythmie. Bei dem Vorhofflimmern führt das Herzmuskelgewebe im Vorhof durch eine unregelmäßige Ausbreitung des elektrischen Impulses zu einem unregelmäßigeren und schwächeren Herzschlag (Flimmern). Mithilfe einer Katheterablation kann das Vorhofflimmern durch Aböden des Vorhofgewebes gestoppt werden. \medskip
+
+Um überhaupt zu wissen, welche Stellen im Vorhof abliert werden sollen, wird im Klinikum Dortmund ein spezielles Mappingverfahren genutzt. Unter dem Tisch des Patienten befinden sich drei fest verbaute Elektroden, die durch ihren Spannungsabfall ihren jeweiligen Abstand zu einer Elektrode im Vorhof messen. Durch ein "Abtasten" der Herzwände kann nun die Geometrie des Herzen erfasst werden und drei Dimensional am Computer dargestellt werden. Beim "Abtasten" wird auch die elektrische Leitfähigkeit des Gewebes gemessen und durch das Bild farblich markiert. Für diese Methode ist ausschlaggebend, dass sich der Patient nicht bewegt, da sonst das 3D Bild verschoben ist. \medskip
+
+Nun kann der Kardiologe mit dem Elektrodenkatheter alle grünen Stellen im Vorhof durch Erhitzen des Gewebes ablieren und somit das Vorhofflimmern unterbinden.
+
+
+
+\subsection{Augenheilkunde}
+
+Der Besuch bei der Augenklinik war zweigeteilt: Die erste hälfte wurde in der Ambulanz verbracht, die zweite in dem OP Saal. \medskip
+
+In der Ambulanz werden hauptsächlich Bilder von dem Auge erstellt. Dazu gibt es zwei Verfahren: In der Fluoreszenzangiografie wird den Patienten ein Kontrastmittel verabreicht, das fluoresziert. Bei der anschließenden Aufnahme der Netzhaut sind die Gefäße dann deutlich sichtbar. \medskip
+
+In der optischen Kohärenztomografie wird der hintere Augenabschnitt untersucht. Die Funktionsweise ähnelt einem Interferometer. Eine eingehende Lichtwelle wird an einem Spiegel gespalten, sodass ein Teil der Welle von einem Referenzspiegel reflektiert wird und der andere Teil von der Netzhaut reflektiert wird. Wenn beide Wellen positiv Interferieren, sind sie in Phase und haben bei korrekter Kallibrierung den selben Weg hinterlegt. Der Aufbau ist in Abb. \ref{fig:kohärenz} einsehbar.
+
+\begin{figure}%
+    \centering
+    \subfloat[\centering Spaltung der Eingehenden Welle]{{\includegraphics[width=0.4 \textwidth]{Kohärenztomografie} }}%
+    \qquad
+    \subfloat[\centering Reflexion und Detektion]{{\includegraphics [width=0.4 \textwidth]{Kohärenztomografie2} }}%
+    \caption{Optische Kohärenztomografie}%
+    \label{fig:kohärenz}%
+\end{figure}
+
+Dieses Verfahren wird in der selben stelle des Auges mehrfach wiederholt. Durch die unterschiedlichen Brechungsindizes der verschiedenen Schichten in der Netzhaut lässt sich ein Tiefenprofil erstellen. Durch Variation des Lichtwellenwinkels kann die gesamte Netzhaut \enquote{abgefahren} werden, um ein tomografisches Bild zu erstellen. \medskip
+
+In dem Operationssaal wurden Operationen am Auge vorgenommen. Wir konnten eine lamelläre Keratoplastik beobachten, bei der eine dünne schicht einer Spenderhornhaut in das Auge des Patienten implantiert wurde.  \medskip
+Die Descemetmembran und die darauf befindlichen Endothelzellen der Spenderhornhaut sind nur 5 µm dick und entsprechend empfindlich auf physischen Kontakt. Um die Hornhautschicht korrekt zu platzieren wird deswegen mit Luftblässchen gearbeitet.
+
+
+\subsection{Urologie}
+
+Die Urologie haben wir in dem OP- Saal erlebt. Die Behandlungen waren eine Nierensteinentfernung und eine Entfernung von einem Prostatatumor. \medskip
+
+Der Tumorpatient wurde durch einen Monopolkatheter behandelt. Dazu wird dem Patienten am Arm eine Elektrode auf der Haut fixiert. Die zweite Elektrode wird durch die Harnröhre eingeführt. Mithilfe einer Kamera, die ebenfalls durch die Harnröhre geschoben wird, kann der Arzt das tumorbefallene Gewebe identifizieren und durch anlegen einer Spannung in dem Monopolkatheter erhitzen und entfernen.\medskip
+
+Das elektrische Feld wird dann zwischen der Elektrode am Körper und der Elektrode im Körper aufgebaut und durch eine Metallschicht in dem Monopolkatheter mit einem sehr hohen Widerstand erhitzt sich das Metall und lädiert das umgebene Gewebe.\medskip
+
+Da diese Methode nur angewandt werden kann, wenn sich keine elektronischen Objekte im Körper befinden (z.B. Herzschrittmacher oder Defibrillator) gibt es als Alternative den Dipolkatheter. Dieser erzeugt eine wesentlich höhere Spannung zwischen zwei Elektroden, die sich beide an der Spitze des Katheters befinden. Lädiert wird hier der Bereich zwischen den Elektroden. Zu beachten ist, dass Kochsalzlösung als Spülmittel aufgrund seiner Leitfähigkeit nicht verwendet wird. \medskip
+
+Die Nierensteinentfernung (Perkutane Nephrolitholapaxie) wurde in zwei Phasen durchgeführt: Zuerst wurde der Nierenstein mithilfe von Röntgen- und Ultraschallaufnahmen geortet, dann wurde eine Punktion vom Rücken unter den Rippen des Patienten in die Niere durchgeführt. \medskip
+
+Anschließend wurden die Steine durch mechanisch-pneumatische Stöße zertrümmert und durch den Wasserwirbel der Kochsalzlösung aus der Punktion entfernt.
+
+
+
+\subsection{Strahlentherapie}
+
+In der ersten Hälfte der Strahlentherapie haben wir uns umfänglich mit einem angestellten Medizinphysiker (Christian Mehrens) unterhalten. Er beschrieb eingehend den Vorgang der Erstellung eines Bestrahlungsplans, sowie die Funktionsweise des Linearbeschleunigers. \medskip
+
+Nachdem der Tumor in CT und MRT- Aufnahmen festgestellt und lokalisiert wird, zeichnet ein Oberarzt den zu bestrahlenden Bereich und die Bestrahlungsdosis digital ein. Der Medizinphysiker hat nun die Aufgabe dafür zu sorgen, dass die \enquote{Strahlungswolke} möglichst genau nur das Zielgebiet erreicht und das umgebende Gewebe nicht beeinträchtigt. \medskip
+
+Das wird dadurch erreicht, dass der Kopf des Linearbeschleunigers um den Patienten rotiert und je nach Winkel und Zieltiefe seine Intensität regelt. Dazu kommt eine Regulation von \enquote{Bleifingern}, die an dem Bereich des Strahlungsaustritts die Strahlung blockiert, sodass die Strahlungsform winkelabhängig ist, da sich die Finger vor- und zurückschieben. \medskip
+
+Durch Einstellen verschiedener Parameter, wie der Strahlungsdosis, des maximalen Strahlungsdichteunterschieds etc. wird ein Strahlungsplan vom Computer generiert, der dann so lange nachjustiert wird, bis der Planersteller mit dem Ergebnis zufrieden ist. \medskip
+
+Den Rest der Zeit haben wir im Abteilungseigenen Computertomographen (CT) und bei der Strahlungstherapie selbst verbracht. \medskip
+
+Der CT ist ein Bildgebendes Verfahren, das ähnlich funktioniert wie ein Röntgengerät. In einem Emitter wird durch das Beschleunigen von Elektronen, die auf eine Metallschicht stoßen Bremsstrahlung und Charakteristische Strahlung generiert. Mit einer Wellenlänge von etwa $10$ nm ist diese Strahlung Ionisierend. Es muss daher entsprechende Schutzbekleidung angezogen werden. \medskip
+
+Die Strahlung durchdringt das Körpergewebe und wird von härteren Körperinhalten stärker absorbiert als von schwachen. Durch einen Detektor am anderen Ende des Körpers wird das Signal aufgenommen und in ein Bild umgewandelt. \medskip
+
+Bei einem CT ist die Wellenlänge der Strahlung identisch, aber die Intensität ist wesentlich höher. Dazu rotiert die Röntgenröhre mit dem Detektor um den Patienten, um ein Dreidimensionales Bild zu erzeugen. \medskip
+
+An der Strahlungstherapie selbst war sehr beeindruckend, wie hoch die Patiententaktung war. Pro Patient wurden ca. $15$ Minuten eingeplant, dadurch war es uns leider nicht möglich uns den Linearbeschleuniger von Nahem genauer anzuschauen. \medskip 
+
+\subsection{HNO-Klinik}
+
+Der Aufenthalt in der Hals-Nasen-Ohrenklinik war in Ambulanz und OP unterteilt. \medskip
+
+In der Ambulanz werden Patienten beraten, aufgeklärt und untersucht. Einem Patienten mit Hörbeschwerden am linken Ohr, Kopfschmerzen und Schwindel wurde durch ein Lichtmikroskop ins linke Ohr geschaut. Dort wurden Zysten im Mittelohr erkannt, die ein starker Hinweis auf einen Tumor sind. Anschließend wurde der Patient zu einem Gehörtest geschickt. \medskip
+
+Der Gehörtest ist standatisiert und wird bei den meisten Patienten identisch ausgeführt. Zuerst wird der Mittelohrdruck mit einem Impedanzmessgerät gemessen. Dann werden den Patienten Kopfhörer aufgesetzt, die Töne in verschiedenen Frequenzen von sich geben. Besonders wichtig ist da der Frequenzbereich von $\SI{0,5}{\kilo\hertz}$ bis $\SI{5}{\kilo\hertz}$, da es sich hier um den Frequenzbereich der Sprache handelt. \medskip
+
+Darauf folgt ein Stimmgabeltest, bei dem den Patienten eine vibrierende Stimmgabel zentral auf den Schädel platziert werden und sie gefragt werden, aus welcher Richtung das Geräusch kommt. Dieser Test kann helfen, um zwischen Schallleitungsstörungen und Schallempfindungsstörungen zu unterscheiden. \medskip
+
+Zu letzt wird bei dem Standardtest die Innenohrhörfähigkeit geprüft. Dazu gibt es spezielle Kopfhörer, bei denen das Signal auf die Haut hinter das Ohr abgegeben wird. Die Töne sind identisch mit dem herkömmlichen Hörtest. \medskip
+
+Im OP wurde eine Nasenoperation beobachtet. Eine Patientin hat aufgrund ihrer vergrößerten Nase Inspirationsprobleme. In dieser OP wurde gleichzeitig eine Nasenverschönerung durchgeführt, da die Nase bereits einen Knochenbruch erlebt hat. Anhand von Fotos formt der Oberarzt den Nasenrücken und die Knorpel der Nase. Durch die geringe Durchblutung des Gewebes in der Nase, verheilen Knochenbrüche in der Nase besonders schlecht. Aus diesem Grund können ästhetische Eingriffe erforderlich werden. \medskip
+
+
+
+\subsection{Orthopädie}
+
+Die Orthopädie bemüht sich um die Gesundheit der Gelenke und des Bewegungsapparates. Diese Station wurde im OP- Saal beobachtet. \medskip
+
+Die erste Operation war ein durch Artrose bedingter Einbau einer Knieprothese. Dadurch, dass der Knorpelabbau der Artrose irreversibel is, kann eine Stabilisierung der Knies bei fortgeschrittener Artrose nur durch eine Prothese erreicht werden.\medskip
+
+Nach dem Freilegen des Gelenkes werden die abgenutzten Gelenkflächen entfernt. An die entfernten Flächen wird eine Metallklappe und eine Metallplatte angebracht. Zwischen diese kommt ein Kunststoffimplantat. \medskip
+
+Der Einbau der Prothese wird durch eine Physiotherapie begleitet. \medskip
+
+Die zweite Operation war eine Triple-Osteotomie bei einer Patientin mit Hüftdysplasie. Hier wird versucht einen Einbau einer künstlichen Prothese hinauszuzuögern, gerade weil die Patientin noch sehr jung ist. \medskip
+
+Bei der Hüftdysplasie handelt es sich um eine genetische oder erworbene Krankheit, die sich bei Neugeborenen dadurch bilden kann, dass die Stellung von Hüftkopf zu Hüftpfanne nicht richtig ist. \medskip
+
+Durch Verknöcherung festigt sich die Fehlstellung der Knorpel und es kommt zur Hüftdysplasie, die zu Hinken, Gangstörung und Schmerzen führt. \medskip
+
+Bei der Triple-Osteotomie wird versucht die Hüftpfanne in allen Ebenen so zu drehen und zu schwenken, dass der Hüftkopf wieder möglichst vollständig überdacht wird. \medskip
+
+
+
+\subsection{Radiologie}
+
+Die Radiologie war zweigeteilt. Die erste Hälfte haben wir bei der Computertomographie (CT) und der Magnetresonanztomografie (MRT) verbracht und die zweite Häfte bei der Nuklearmedizin. \medskip
+
+Das MRT besitzt im Kontrast zu dem CT eine hohe Auflösung von weichem Gewebe, insbesondere von Wasserhaltigen Bereichen im Körper. In einem Ring wird in einem von Flüssighelium gekühlten Supraleiter ein starkes Magnetfeld von etwa $4$ Tesla angelegt. Die Spins der Wasserstoffkerne des Patienten, der sich in der Röhre befindet, richten sich nach dem Magnetfeld aus.  \medskip
+
+Durch einen Hochfrequenzimpuls werden die Spins aus ihrer geordneten Lage gebracht. Gemessen wird nun die \enquote{Relaxationszeit } der Spins, also die Zeit bis die ungeordneten Spins sich wieder nach dem Magnetfeld ausrichten. Diese Relaxationszeit ist auch abhängig von dem Molekül, in dem der Wasserstoff gebunden ist. \medskip
+
+Am Computer werden verschiedene \enquote{Programme} gefahren, die unterschiedlich gewichtete Molekülstrukturen untersuchen. Durch Zugabe von einem diamagnetischen Kontrastmittel lassen sich beispielsweise $T_2$ gewichtete (fetthaltiges Gewebe) besser erkennen. \medskip
+
+In der Nuklearmedizin gibt es hauptsächlich Methoden zur Diagnose von Tumorpatienten. Durch die Verabreichung von einem schwach- radioaktiven Material (Technetium $99$-m), das in verschiedene Biomolekühle gebunden wird, reichert sich das Technetium an einem Zielorgan an. Durch Detektoren kann nun nach ca. $40$ Minuten Aufnahme die Position und Aktivität des Tumors festgestellt werden. \medskip
+
+Die Nuklearmedizin hat jedoch auch therapeutische Aspekte. Bei einem Schilddrüsentumor können technetiumhaltige Tabletten konsumiert werden, die sich nach der chirurgischen Entfernung der Schilddrüse an dem übriggebliebenen Schilddrüsengewebe anreichern diese durch ihre Strahlung vernichten. \medskip
+
+
+
+
+
+
+\subsection{Chirurgie}
+
+In der Chirurgie haben wir die Organisation und den Ablauf von chirurgischen Eingriffen beobachtet. In jeder OP sind mindestens drei Personen sterilisiert. Das ist an ihren speziellen blaue Kitteln und Handschuhe erkennbar. Auch die Tische mit dem benötigten Operationswerkzeug sind durch blaue Tücher gekennzeichnet, ihnen darf man sich auf $1,5$ Meter als unsterile Person nicht nähern. \medskip
+
+Das Medizinische Fachpersonal (Operationstechnische Assistenz, OTA) assistiert die beiden operierenden Ärzte während des Eingriffes. Das Personal reicht den ausführenden Ärzten Werkzeuge, Medikamente und weiteres Material, damit diese sich vollkommen auf ihre Operation konzentrieren können. Operiert wird mindestens zu zweit, wobei immer mindestens ein Oberarzt mitoperiert. \medskip
+
+Zusätzlich gibt es eine nichtsteriliserte OTA, ein \enquote{Springer}, der benötigte Operationsmaterialien an die sterilisierte Operationsassistenz weiterreicht. Dazu kommt noch die Anästesie. \medskip
+Operiert wird entweder offen oder geschlossen. Bei einer geschlossenen Operation werden nur vergleichsweise kleine Löcher in den Bauch des Patienten gestochen. Durch eines dieser Löcher wird ein Schlauch gesteckt, das kontinuierlich CO$_2$ unter die Haut pumpt. Dadurch, dass die Haut nur auf dem Gewebe darunter aufliegt, bläht sich der Bauch so auf, dass die Operateure ihre Werkzeuge durch andere Löcher in den entstehenden Hohlraum schieben können, um so die Operation minimalinvasiv zu gestalten. \medskip
+
+Diese Operationsform ist jedoch nicht immer möglich, wenn Operationen an einer anderen Stelle stattfinden (z.B. Herz Bypass) oder ein großes Stück Gewebe entfernt werden muss (z.B. Kolektomie). Hier wird \enquote{offen} operiert. Im Fall der Kolektomie (Dickdarmentfernung) aufgrund eines Kolonkarzinoms wurde der entfernte Tumor in die Pathologie geschickt, um dort untersucht zu werden. \medskip
+
+
+
+
+
+
+\newpage
+\section{Erfahrungsberichte}
+\subsection{Persönlicher Bericht - Eren Canpolat}
+
+Da die Anästesie bei jeder Narkose und damit bei fast jeder Operation zugegen sein muss und die Operateure meistens sehr konzentriert aussahen, habe ich meine meisten Fragen an die Anästesie gestellt. \medskip
+
+Beeindruckend fand ich die Mischung aus Stress und Routine. Anästesisten müssen einen Blick auf alles gleichzeitig haben. Der Blutdruck, die Sauerstoffsättigung, die Herzfrequenz, die Beatmung und vieles mehr. Wenn sich einer dieser Werte ohne Reaktion zu lange im kritischen Bereich befindet, steht das Leben der Patienten auf dem Spiel. \medskip
+
+Gleichzeitig beeindruckt mich die Ruhe und die Professionalität der Anästesie. Jeder Handgriff wurde schon so oft getätigt, dass Anästesisten den Eindruck machen. nichts könne sie beeindrucken.\medskip
+
+In Abb. \ref{fig:Beatmung} ist ein Beatmungsgerät zu sehen. Die Werte sind, um deutlich zu machen, dass fast jeder Wert wichtig ist. \medskip
+
+ \begin{figure}
+        \centering
+        \includegraphics[width=1.0\textwidth]{atmen2.PNG}
+        \caption{Beschriftung des Beatmungsgeräts}
+        \label{fig:Beatmung}
+        \centering
+        \end{figure}
+\newpage
+
+Das Beatmungsgerät ist deswegen so interessant, weil es auch Medizinphysikalisch relevant ist. Es handelt sich um eine Mechanische Pumpe, die jedoch anders funktioniert als die Lunge. \medskip
+
+Während die Lunge durch Muskelkontraktion und Ausdehnung durch einen erzeugten Unterdruck Luft in den Körper einsaugt, pumpt das Beatmungsgerät Luft mit Überdruck in den Körper. \medskip
+
+Diese künstliche Beatmung ist für den Körper nicht nur potenziell schädlich, weil der Überdruck (Beschriftet als PEAK) der Lunge schaden kann, sondern weil die Lunge auch im Ausatemzustand einen Minimaldruck (PEEP) benötigt, um nicht zu kollabieren. \medskip
+
+Der zweite sehr wichtige Bildschirm für die Anästesie ist in Abb. \ref{fig:Blut} dargestellt. Hier sieht man von rechts oben nach unten:Die Herzfrequenz, den systolische Blutdruck, den diasystolische  Blutdruck, die Sauerstoffsättigung, eine zweite Messung der Herzfrequenz und die Körpertemperatur. \medskip
+
+Die Herzfrequenz wird über einen 12- Kanal Elektrokardiogramm (EKG) gemessen. Dieses besteht aus 12 Dioden, die die elektischen Impulse des Herzens aus unterschiedlichen Richtungen messen. Durch das 12- Kanal EKG lässt sich dadurch auch beispielsweise die Position eines Herzinfarktes bestimmen. \medskip
+
+ \begin{figure}
+        \centering
+        \includegraphics[width=1.0\textwidth]{Blut.jpeg}
+        \caption{Blutmessgerät}
+        \label{fig:Blut}
+        \centering
+        \end{figure}
+\newpage
+
+Die Blutdruckmessung erfolgt über einen Arterienkatheter und die Sauerstoffsättigung über Pulsoxymetrie am Finger. Die Körpertemperatur wird schließlich unter dem Patienten aufgenommen.\medskip
+
+Die Anästesie hat nicht nur diese Werte auf dem Monitor im Blick, sie muss auch andere Dinge, wie die Infusionslösung im Blick behalten und bei bedarf nachliefern. \medskip
+
+Die Medikation muss beachtet werden, sonst wacht der Patient mitten in der OP auf. \medskip
+
+Mit einer Blutgasanalyse muss bei viel Blutverlust auch der Hämoglobinwert des Blutes betrachtet werden, um bei Bedarf Spenderblut zu bestellen. \medskip
+
+Im allgemeinen ist das Ziel der Anästesie die Grundlegenden Körperfunktionen nicht zu überwachen, sondern auch zu bändigen: \medskip
+
+Wenn schnell gerinnendes Blut beispielsweise während der Herzoperation stört, weil dort unter Anderem Gefäße aufgeschnitten werden müssen, dann können dem Blut Blutverdünner wie Heparine verabreicht werden. \medskip
+
+Dazu ist konstante Kommunikation zwischen operierenden Ärzten und der Anästesie notwendig. Sie hilft also nebenbei noch aus, um beispielsweise mal den Tisch zu verschieben oder anzuheben. \medskip
+
+Die Anästesie ist auch ein sehr Bewegungsreicher Beruf. Ständig muss etwas (meistens Medikamente) aus einem anderen Raum geholt werden. Einige der Messinstrumente sind im Raum verteilt. \medskip
+
+Mich hat beeindruckt wie schnell es hektisch werden kann. Während einer OP sank der systolische Bluttdruck des Patienten plötzlich während ich mich mit der Anästesistin unterhalten habe auf 40 mmHg ab. Das bemerkte die Anästesistin sofort und sie verlagerte den Körper innerhalb von Sekunden auf dem OP- Tisch auf eine Kopf- Tieflage, sodass der Blutdruck sich wieder stabilisierte. Innerhalb von einer Minute konnte sie sich schon wieder mit mir unterhalten. \medskip
+
+Ich habe die Anästesie im Krankenhaus als sehr abwechslungsreich, anspruchsvoll und erfüllend wahrgenommen. Die Anästesie war gleichzeitig bis auf einige wenige sehr gut nachvollziebare Stressmomente immer auch erfreut ihr Wissen teilen zu können. Sie haben Fragen so gut sie konnten auch über andere Abteilungen beantwortet, was gerade am Anfang geholfen hat einen Überblick über den Krankhausalltag zu gewinnen. \medskip
+
+Zusätzlich kommen dann auch noch Gesprächstermine mit den Patienten, individuelle Unterschiede zwischen den Patienten (Medikationen, Allergien usw.), kein Tag in der Anästesie schien mir wie ein zweiter zu sein. Gleichzeitig strahlen sie eine Ruhe und Routine aus, das hat mich persönlich nachhaltig beindruckt.
+
+
+
+
+
+
+ 
+
+\newpage
+
+
+\subsection{Persönlicher Bericht Anna Mendel - Kardiologie}
+
+Die Kardiologie befasst sich als Teil der inneren Medizin mit der Anatomie des Herzens und Erkrankungen des Herz-
+Kreislauf-Systems.Eine der häufigsten Herzerkrankungen sind Herzrhythmusstörungen, dessen physikalische Hintergründe in der Behandlung näher erläutert werden sollen.\medskip
+    
+Im Rahmen der Diagnostik gibt es verschiedene Untersuchungsmöglichkeiten zur Erkennung von mangelnder Pumpleistung oder Irregularitäten des Herzschlages, welche je nach Art und Ausmaß lebensbedrohlich sein können. \medskip
+    
+Auf der Seite der bildgebenden Verfahren ist eine Echokardiographie gängig.
+Diese umfasst eine Ultraschalluntersuchung mit einer Sonde, die basierend auf dem piezoelektrischen Effekt Ultraschallwellen im frequenzbereich von 2-20 MHz aussendet und empfängt. \medskip
+    
+Bei diesem Effekt wird ein Piezokristall in ein elektrisches Wechselfeld gebracht und somit zum Schwingen angeregt, die emittierten Wellen entsprechen dann den Schallwellen und werden je nach Gewebe oder Struktur im Körper absorbiert oder mit verschiedenen Schallimpedanzen reflektiert. Der reflektierte Anteil wird von der Sonde registriert und in elektrische Signale umgewandelt, die auf einem Bildschirm dargestellt werden. Das geschieht in Echtzeit und somit kann der Pumpvorgang des Herzens kontinuierlich untersucht werden und dient zum Beispiel der Beurteilung von Herzwanddicken, der Kontraktilität, Insuffizienzen oder Stenosen der Herzklappen, oder auch der Tumorerkennung. \medskip
+    
+Das Elektrokardiogramm als weitere diagnostische Methode befasst sich mit der elektrischen Aktivität des Herzens.
+Die Reizweiterleitung der Herzmuskelzellen erfolgt über elektrische Impulse, die gemessen und als Kurve dargestellt werden. \medskip
+    
+Die Kurve des EKGs lässt sich in verschiedene Abschnitte einteilen, denen jeweils bestimmte elektrophysiologische Vorgänge im Herzen zugrunde liegen. \medskip
+    
+Davon ausgehend können Annomalien in der Kurve analysiert und Aussagen im Hinblick auf Extrasystolen, Herzinfarkte oder ähnliche Problematiken getroffen werden.\medskip
+    
+Während der Hospitation auf der kardiologischen Station wurde die Behandlung von Patienten mit Herzrhythmusstörungen mitverfolgt. \medskip
+    
+In Folge einer Synkope und aufgetretenden Rhythmusstörungen wurde eine Schrittmacher-Therapie durchgeführt zur Beurteilung der Gefährdung durch potentiell wiederholt auftretende Rhythmusstörungen. \medskip
+    
+Beim sogenannten Pacing ist der Patient sediert und es werden Defibrillator-Patches angebracht, welche durch einen externen Schrittmacher manuell gesteuert werden können. \medskip
+    
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.4\textwidth]{Schrittmacher}
+        \caption{Externer Schrittmacher und Elektrokardiogramm.}
+        \label{pacing}
+        \centering
+        \end{figure}
+
+\newpage 
+Zudem ist ein Multikanal-EKG angeschlossen, um die Signale interpretieren zu können \ref{pacing}.
+Diese Methode kann verwendet werden, um einem Schema folgend das Herz zu stimulieren, bis Rhythmusstörungen gezielt hervorgerufen werden. \medskip
+
+Ausgehend von einer stetigen Ausgangsfrequenz werden künstliche Extrasystolen in immer kürzer werdenen Abständen erzeugt, mithilfe des Elektrokardiogramms wird dann überprüft, bis zu welchen Grenzen die elektrische Reizung von einem Auswurf am Herzen gefolgt ist. Treten keine Komplikationen auf, so kann von einer geringen Gefährdung des Patienten ausgegangen werden. \medskip
+
+Im Anschluss an die Behandlung wurde eine Katheterablation bei einem Patienten mit persistierendem Vorhofflimmern beobachtet.
+Katheterablationen, als minimalinvasiver Eingriff unter Sedierung, werden als Alternative zu Medikationen eingesetzt, da die Störung somit unmittelbar am Herzen beseitigt wird. \medskip
+
+
+Vorhofflimmern als eigene Krankheit zugrunde liegend sind Herzmuskelfasern, die zum Teil vom linken Vorhof in die Lungenvenen herausragen. \medskip
+
+Diese Muskelbrücken verursachen störende elektrische Signale und der Vorhof kann nicht mehr vernünftig arbeiten. Auslöser können aber auch Vorerkrankungen oder Operationen sein. \medskip
+
+Im Falle des beobachteten Patienten lag die Ursache an vorangegangenen Behandlungen und Herzinfarkten, wodurch Herzmuskelzellen vernarben und ihre Leitfähigkeit verlieren. Da Herzmuskelzellen nicht regenerieren können, bleibt diese Fähigkeit für die betroffenen Zellen auch aus, was bei genügend gesundem Gewebe allerdings nicht weiter problematisch ist. \medskip
+
+Anders verhält es sich mit umliegendem Gewebe oder beeinträchtigten, aber nicht gänzlich kaputten Zellen. Diese nehmen zwar noch an der Reizweiterleitung des Herzens Teil, die ausgehenden Signale sind jedoch zu schwach und es kommt zu einer gestörten Innervation. \medskip
+
+Das Ziel der Ablation liegt somit in der vollständigen Vernarbung des Zwittergewebes, sodass die elektrischen Reize am Herzen durch das gesunde Gewebe problemlos geleitet werden können. \medskip
+
+Hierbei gibt es verschiedene Möglichkeiten.Bei der Hochfrequenzstrom-Ablation wird ein Katheter, typischerweise über die Leistenvene, zum Herzen geführt und dort wird das Gewebe über Strom durch die Katheterspitze zerstört. \medskip
+
+Gängige Werte für ein Zielort sind 25-40 Watt Leistung für eine Dauer von 30-60 Sekunden.Als Optimierung für diese Methode dient das High Power Short Duration (HSPD) Verfahren. Hierbei fließt der Strom nur für 4-7 Sekunden mit einer Leistung von 70-90 Watt. Vorteilhaft ist dabei, dass eine noch fokussiertere Verödung möglcih ist, die Behandlungsdauer kürzer ist und umliegendes Gewebe geschützt wird. \medskip
+
+Dies ist auch das in der begleiteten Behandlung verwendete Verfahren. Alternativ zur Ablation mit Strom gibt es die Kryo- oder Kälteablation. Hierbei wird ein "Eis-Ballon" über den Katheter vor jede Lungenvene gebracht und das Gewebe für 2-4 Minuten auf -40\textcelsius bis -60\textcelsius runtergekühlt. \medskip
+
+Eine neue Methode bietet die Pulsed Field Ablation (PFA), auch Elektroporation genannt.Dabei werden vom Katheter zielgerichtete, ultraschnelle elektrische Felder erzeugt, wodurch mikroskopische Poren in der Herzmuskelzellmembran entstehen.Das Herz wird außer Takt gebracht und die Zielzellen sterben ab, angrenzendes Gewebe wird nahezu nicht geschädigt. \medskip
+
+Eine mögliche Art der Bildgebung während der Behandlung stellen Röntgenaufnahmen dar. Der Katheter kann im Körper lokalisiert und zielgerichtet geführt werden. \medskip
+
+    \begin{figure}
+        \centering
+        \caption{Geräte CARTO3 Mapping-System.}
+        \label{carto}
+        \includegraphics[width=0.6\textwidth]{CARTO3}
+        \centering
+        \end{figure}
+    \begin{figure}
+        \centering
+        \caption{Beispiel eines elektroanatomischen Map.}
+        \label{map}
+        \includegraphics[width=0.6\textwidth]{3D-Mapping}
+        \centering
+        \end{figure}
+
+\newpage
+
+Um Strahlenaussetzung sowohl für den Patienten, als auch für den behandelnden Arzt zu minimieren, werden auch 3D-Mappingsysteme eingesetzt. \medskip
+
+Die Katheterspitze ist für eine solche Anwendung dahingehend modifiziert, dass drei unterschiedlich ausgerichtete Spulen magnetische Wechselfelder mit verschiedenen Frequenzen aufbauen. \medskip
+
+Sensoren erfassen dann durch die Katheterbewegung im Magnetfeld induzierte Spannungsänderungen und leiten diese Informationen weiter an einen Prozessor, welcher anhand der Daten zu jedem Zeitpunkt eine auf 1mm genaue Lokalisation und Orientierung des Katheters im Magnetfeld ermöglicht. \medskip
+
+Der Katheter ist ebenfalls dazu in der Lage die elektrische Leitfähigkeit der abgetasteten Regionen zu erkennen.Durch das Abtasten des Herzens wird also ein elektroanatomisches Map konstruiert, welches ein 3D-Modell des Herzens mit farblich codierten Amplituden- und Spannungssignale der Herzerregung umfasst. \medskip
+
+So können die Zwittergebiete mit wenig Reizweiterleitung identifiziert und im selben Zuge ablatiert werden. Für einen Detailbericht über die Kardiologie habe ich mich entschieden, da ich vor dem Einblick durch das Praktikum nicht mit so vielen physikalischen Anwendungsgebieten gerechnet hätte, die über EKGs hinaus gehen. \medskip
+
+Die Thematiken waren äußerst spannend und der Austausch mit dem behandelnden Arzt über die Methoden sind mir nachhaltig im Gedächtnis geblieben.
+
+
+
+\newpage
+
+
+
+
+\newpage
+
+\begin{thebibliography}{9}
+\bibitem{Skizze der Kohärenztomografie}Skizze der Kohärenztomografie: Selbst erstellt mit PowePoint
+\bibitem{Behandlungen} Informationen zu den Behandlungsmöglichkeiten: Website des klinikum Dortmund: https://www.klinikumdo.de/kliniken-zentren/
+\bibitem{Knieprothese} Ablauf künstliche Knieprothese: https://www.schulthess-klinik.ch/de/kniechirurgie/behandlung/knieprothese-das-kuenstliche-kniegelenk
+\bibitem{TripleOsteotomie} Infos zu Triple Osteotomie: https://de.wikipedia.org/wiki/Triple-Osteotomie#Ziel$_$der$_$Triple-Osteotomie
+
+
+
+\end{thebibliography}
+
+
+\end{document}
